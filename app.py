@@ -26,7 +26,7 @@ def analyze_resume(api_key, resume_text, job_desc):
     """Sends the resume and job description to Gemini for ATS evaluation."""
     genai.configure(api_key=api_key)
     # gemini-1.5-pro is recommended for complex reasoning and formatting tasks
-     model = genai.GenerativeModel('gemini-2.5-flash')
+    model = genai.GenerativeModel('gemini-2.5-flash')
 
     prompt = f"""
     Act as a highly experienced Applicant Tracking System (ATS) and expert Technical HR Manager. 
