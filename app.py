@@ -8,7 +8,7 @@ st.title("📄 ATS Resume Analyzer")
 st.write("Upload your resume and a job description to get your ATS match score and improvement suggestions.")
 
 # Securely capture the API key so it isn't hardcoded
-api_key = st.text_input("Enter your Google Gemini API Key:", type="password")
+api_key = st.secrets["GEMINI_API_KEY"]
 job_description = st.text_area("Job Description", height=200, placeholder="Paste the job description here...")
 uploaded_file = st.file_uploader("Upload Resume (PDF only)", type=["pdf"])
 
