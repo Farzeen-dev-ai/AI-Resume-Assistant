@@ -6,7 +6,7 @@ import PyPDF2
 st.set_page_config(page_title="ATS Resume Analyzer", page_icon="📄", layout="centered")
 st.title("📄 ATS Resume Analyzer")
 st.write(# Create a 2-column layout for the most important takeaways
-col1, col2 = st.columns([1, 2])
+col1, col2 = st.columns([1, 2]))
 
 with col1:
     # This displays a large, stylized metric. 
@@ -19,7 +19,7 @@ with col2:
 
 # This places the dense list of missing keywords into a toggleable dropdown
 with st.expander("View Missing Keywords Breakdown"):
-    st.write(response.text) # Replace 'response.text' with your actual AI output variable))
+    st.write(response.text) # Replace 'response.text' with your actual AI output variable)
 
 # Securely capture the API key so it isn't hardcoded
 api_key = st.secrets["GEMINI_API_KEY"]
