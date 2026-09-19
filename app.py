@@ -5,17 +5,7 @@ import PyPDF2
 # Configure the Streamlit page
 st.set_page_config(page_title="ATS Resume Analyzer", page_icon="📄", layout="centered")
 st.title("📄 ATS Resume Analyzer")
-st.write(# Create a 2-column layout for the most important takeaways
-col1, col2 = st.columns([1, 2])
-
-with col1:
-    # This displays a large, stylized metric. 
-    # (You can program the AI to output just a number later to make this dynamic)
-    st.metric(label="ATS Match Score", value="38%") 
-
-with col2:
-    # This creates a highlighted callout box for the profile summary
-    st.warning("Significant mismatch: Prioritize C++ and OOP concepts.")
+st.write("Upload your resume and a job description to get your ATS match score and improvement suggestions.")
 
 # This places the dense list of missing keywords into a toggleable dropdown
 with st.expander("View Missing Keywords Breakdown"):
