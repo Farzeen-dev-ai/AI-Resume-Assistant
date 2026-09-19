@@ -9,7 +9,7 @@ st.write("Upload your resume and a job description to get your ATS match score a
 
 # This places the dense list of missing keywords into a toggleable dropdown
 with st.expander("View Missing Keywords Breakdown"):
-    st.write(response.text)) # Replace 'response.text' with your actual AI output variable
+    st.write(response.text) # Replace 'response.text' with your actual AI output variable
 
 # Securely capture the API key so it isn't hardcoded
 api_key = st.secrets["GEMINI_API_KEY"]
