@@ -8,7 +8,7 @@ st.title("📄 ATS Resume Analyzer")
 st.write("Upload your resume and a job description to get your ATS match score and improvement suggestions.")
 
 # This places the dense list of missing keywords into a toggleable dropdown
-    with st.expander("View Missing Keywords Breakdown"):
+with st.expander("View Missing Keywords Breakdown"):
    
 
 # Securely capture the API key so it isn't hardcoded
